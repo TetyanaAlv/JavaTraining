@@ -1,18 +1,6 @@
 
-SET ROLE tetyana;
+SET ROLE larku;
 
-DROP TABLE if exists ADOPTER_WITH_PET;
-
-CREATE TABLE ADOPTER_WITH_PET
-(
-    ID serial primary key not null,
-    NAME VARCHAR(255),
-    PHONE_NUMBER VARCHAR(100),
-    ADOPT_DATE DATE,
-    PET_TYPE VARCHAR(25),
-    PET_NAME VARCHAR(50),
-    PET_BREED VARCHAR(50)
-);
 
 DROP TABLE if exists PET;
 DROP TABLE if exists ADOPTER;
