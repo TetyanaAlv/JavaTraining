@@ -13,6 +13,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 //
 @Repository
+@Profile("prod")
 public class JPAAdopterDAO implements AdopterDAO {
 
    private Map<Integer, Adopter> adopters = new HashMap<>();
